@@ -7,4 +7,14 @@
 const sum = (a, b) => {
   return a + b;
 };
-console.log(sum(5, 6));
+// console.log(sum(5, 6));
+
+const cube = (n) => {
+  console.log(n ** 3);
+};
+// cube(2);
+
+const sqr = (num) => {
+  console.log(num ** 2);
+};
+sqr(10);
