@@ -7,40 +7,67 @@ let arr = [1, 2, 3, 4, 5];
 //   console.log(`do something for element ${i}`);
 // });
 
-const students = [
-  {
-    name: "khan",
-    marks: 96,
-  },
-  {
-    name: "ali",
-    marks: 80,
-  },
-  {
-    name: "simran",
-    marks: 98,
-  },
-];
+// const students = [
+//   {
+//     name: "khan",
+//     marks: 96,
+//   },
+//   {
+//     name: "ali",
+//     marks: 80,
+//   },
+//   {
+//     name: "simran",
+//     marks: 98,
+//   },
+// ];
 
 // ---------------            map methode
 // map return a new array of elements just like foreach methode.
-let gpaList = students.map((el) => {
-  return el.marks / 10;
-});
+// let gpaList = students.map((el) => {
+//   return el.marks / 10;
+// });
 
 // console.log(gpaList);
 
 // ------------------------ filter methode
 //  filter methode filter the orignal array and return new array of true elements that defined in filter call back function.
-let passStudents = students.filter((ele) => {
-  return ele.marks > 80;
-});
+// let passStudents = students.filter((ele) => {
+//   return ele.marks > 80;
+// });
 // console.log(passStudents);
 
 //               example of filter
-let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let even = nums.filter((ele) => {
-  return ele % 2 == 0;
-});
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let even = nums.filter((ele) => {
+//   return ele % 2 == 0;
+// });
 
 // console.log(even);
+
+//                      EVERY & SOME methode
+// Every methode is same as AND gate. here callback function of Every methode return true or false as defined for each element. if one of the result return as false then the "every" methode return false.
+
+// let evenNums = [2, 4, 6, 8, 10];
+// let result = evenNums.every((ele) => {
+//   return ele % 2 == 0;
+// });
+
+// console.log(result);
+
+//   Same "some" methode is like OR gate. if one of the element callback result true "some" methode will return true always
+
+// let evenNums = [4, 3, 5, 9, 11];
+// let result = evenNums.some((ele) => {
+//   return ele % 2 == 0;
+// });
+
+// console.log(result);
+
+// practice questions
+//  return true if an array contain no zero
+let checkZero = [1, 2, 3, 4, 5, 6, 7];
+let result = checkZero.every((ele) => {
+  return ele != 0;
+});
+console.log(result);
