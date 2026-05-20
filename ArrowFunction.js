@@ -17,4 +17,15 @@ const cube = (n) => {
 const sqr = (num) => {
   console.log(num ** 2);
 };
-sqr(10);
+// sqr(10);
+
+//  ------------------------ Implicite return - arrow function
+//  if arrow function reuring single value then we do not explicitily write the return keyword
+
+const mul = (a, b) => a * b;
+console.log(mul(3, 8));
+
+const func = (a) => {
+  console.log(a);
+};
+func("this is a");
