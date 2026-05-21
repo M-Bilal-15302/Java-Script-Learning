@@ -1,4 +1,4 @@
-let arr = [1, 2, 3, 4, 5];
+// let arr = [1, 2, 3, 4, 5];
 
 // forEach is highorder function that take callback function and you can perform a specific
 // task for each of array element.
@@ -66,8 +66,27 @@ let arr = [1, 2, 3, 4, 5];
 
 // practice questions
 //  return true if an array contain no zero
-let checkZero = [1, 2, 3, 4, 5, 6, 7];
-let result = checkZero.every((ele) => {
-  return ele != 0;
+// let checkZero = [1, 2, 3, 4, 5, 6, 7];
+// let result = checkZero.every((ele) => {
+//   return ele != 0;
+// });
+// console.log(result);
+
+//         ------------------------------------  REDUCE METHODE ----------------------------
+//  reduce methode reduce the value of array to a single value. as above methode its required a callback with two variable "accumulator" "element". accumulator store the result that we write for each element. initially it is undefined.
+
+let nums = [1, 5, 2, 3, 100];
+// let finalVal = nums.reduce((acc, ele) => acc + ele);
+// console.log(finalVal);
+
+//                           -------- practice question --------
+//   find the maximus in an array using reduce methode
+
+let numbers = [1, 2, 3, 5, 2, 112, 100];
+let max = numbers.reduce((acc, ele) => {
+  if (ele > acc) {
+    acc = ele;
+  }
+  return acc;
 });
-console.log(result);
+console.log(max);
