@@ -75,18 +75,42 @@
 //         ------------------------------------  REDUCE METHODE ----------------------------
 //  reduce methode reduce the value of array to a single value. as above methode its required a callback with two variable "accumulator" "element". accumulator store the result that we write for each element. initially it is undefined.
 
-let nums = [1, 5, 2, 3, 100];
+// let nums = [1, 5, 2, 3, 100];
 // let finalVal = nums.reduce((acc, ele) => acc + ele);
 // console.log(finalVal);
 
 //                           -------- practice question --------
 //   find the maximus in an array using reduce methode
 
-let numbers = [1, 2, 3, 5, 2, 112, 100];
-let max = numbers.reduce((acc, ele) => {
-  if (ele > acc) {
-    acc = ele;
-  }
-  return acc;
-});
-console.log(max);
+// let numbers = [1, 2, 3, 5, 2, 112, 100];
+// let max = numbers.reduce((max, ele) => {
+//   if (max > ele) {
+//     return max;
+//   } else {
+//     return ele;
+//   }
+// });
+// console.log(max);
+
+//                                    practice question to check all the number devisiable by 10
+
+// let nums = [5000, 20, 30, 40];
+// let result = nums.every((ele) => {
+//   return ele % 10 == 0;
+// });
+// console.log(result);
+
+//                                  create a function to check the minimum number in an array
+function checkMin(nums) {
+  let min = nums.reduce((res, ele) => {
+    if (res > ele) {
+      return ele;
+    } else {
+      return res;
+    }
+  });
+  console.log(min);
+}
+let nums = [0, 24, 2, 13, -88, 62, 2];
+
+checkMin(nums);
