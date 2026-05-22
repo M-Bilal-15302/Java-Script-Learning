@@ -14,3 +14,11 @@ function min(msg, ...args) {
   console.log(`msg after result is ${msg}`);
 }
 min("rest handle many arg in single args arr", 1, 2, 3, -4);
+
+//            DESTRUCTURING
+// destructuring mean to break and store the value of array in multiple variables
+let heros = ["ironman", "thor", "spiderman", "hulk"];
+let [best, secondBest] = heros;
+console.log(secondBest);
+
+// here ironman from heros will save in best and thor in secondbest and so on.
