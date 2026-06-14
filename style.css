@@ -1,0 +1,13 @@
+.btnClass{
+    background-color: blue;
+    color: white;
+    margin-top: 1rem;
+}
+
+.heading{
+    text-decoration: underline;
+    color: purple;
+}
+.p{
+    font-weight: bold;
+}
