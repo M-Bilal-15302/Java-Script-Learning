@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Form Data</title>
+    <style>
+      #scroll-box {
+        overflow: scroll;
+        height: 100px;
+        width: 100px;
+        float: left;
+        border: 2px solid black;
+      }
+
+      #scroll-box p {
+        height: 200px;
+        width: 200px;
+      }
+
+      #output {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" name="username" autocomplete="name" />
+      <br />
+      <input type="password" name="password" autocomplete="new-password" />
+      <button>submit</button>
+    </form>
+
+    <div id="scroll-box">
+      <p>Scroll me!</p>
+    </div>
+    <p id="output">Waiting on scroll events...</p>
+    <script src="FormHandling.js"></script>
+  </body>
+</html>
